@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head><title>COMPOSITION II BLUE AND YELLOW</title>
+<STYLE>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+    }
+    .container{
+        display: grid;
+        background-color: #000;
+        height: 750px;
+        width: 750px;
+        grid-template-rows: 370px 175px 145px 30px; 
+        grid-template-columns: 240px 340px 150px;
+        gap: 10px;
+    }
+    .white{
+        background-color: #f0f1ec;
+    }
+    .blue{
+        background-color: #004592;
+        margin-bottom: 10px;
+        grid-column: span ;
+    }
+    .yellow{
+        background-color: #f9d01e;
+    }
+    #w1{
+        grid-column: span 2;
+    }
+    #w2{
+        grid-row: span 3;
+    }
+    #w3{
+        grid-row: span 2;
+    }
+    #w4{
+        grid-row: span 2;
+    }
+</STYLE></head>
+<body>
+    <div class="container" >
+        <div class="yellow"></div>
+        <div class="white" id="w1"></div>
+        <div class="white" id="w2"></div>
+        <div class="white" id="w3"></div>
+        <div class="blue"></div>
+        <div class="white" id="w4"></div>
+        <div class="white" id="w5"></div>
+    </div>
+</body>
+</html>

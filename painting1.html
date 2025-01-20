@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        COMPOSITION II PIET MONDRIAN
+    </title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+        }
+        .container{
+            height: 750px;
+            width: 750px;
+            background-color: #000;
+            display: grid;
+            grid-template-rows: 240px 240px 20px 110px 100px;
+            grid-template-columns: 240px 390px 100px;
+            gap: 10px;
+        }
+
+        .white{
+            background-color: #F0F1EC;
+        }
+        .red{
+            background-color: #e72f24;
+            grid-area: span 3/span 2;
+        }
+        .blue{
+            background-color: #004592;
+            grid-row: span 3; 
+        }
+        #w1{
+            margin-bottom: 10px
+        }
+        #w3{
+            grid-row: span 2;
+        }
+        #w4{
+            margin-bottom: 10px;
+        }
+        .yellow{
+            background-color: #f9d01e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="white" id="w1"></div>
+        <div class="red"></div>
+        <div class="white" id="w2"></div>
+        <div class="blue"></div>
+        <div class="white" id="w3"></div>
+        <div class="white" id="w4"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+</html>
